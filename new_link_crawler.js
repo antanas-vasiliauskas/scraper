@@ -109,7 +109,7 @@ async function main() {
   for(let videoItem of list){
     if(!list_with_tags.includes(videoItem)){
       await fs.appendFileSync(`links/_all-links-without-tags.txt`, videoItem.contentUrl + "\n", "utf8");
-      console.log(videoItem.tags);
+      //console.log(videoItem.tags);
     }
     
   }
